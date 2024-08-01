@@ -65,7 +65,7 @@ Besides, it needs you to prepare the following checkpoints of 7B base models:
 
 | Argument             | Example             | Description   |
 | -------------------- | ------------------- | ------------- |
-| `--model`    | `llava-1.5` | Specify the MLLM model. |
+| `--model`    | `llava-1.5` | Specify the LVLM model. |
 | `--data-path`     | `/path/to/dataset` | Path to the dataset file or folder. |
 | `--pope-type`     | `coco_adversarial` | Type for POPE evaluation. |
 | `--sample`        | `store_true` | Use the modified decoding strategy. |
@@ -79,7 +79,7 @@ Besides, it needs you to prepare the following checkpoints of 7B base models:
 
 
 ## Acknowledgement
-This repo is based on the MLLM codebase of [OPERA](https://github.com/shikiw/OPERA), [VCD](https://github.com/DAMO-NLP-SG/VCD), and [HA-DPO](https://opendatalab.github.io/HA-DPO/) . Thanks for their excellent works!
+This repo is based on the LVLMs codebase of [OPERA](https://github.com/shikiw/OPERA), [VCD](https://github.com/DAMO-NLP-SG/VCD), and [HA-DPO](https://opendatalab.github.io/HA-DPO/) . Thanks for their excellent works!
 
 <!-- ## Citation
 If you find this work useful for your research, please cite [our paper](https://arxiv.org/pdf/2311.17911.pdf):
