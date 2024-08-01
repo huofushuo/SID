@@ -23,7 +23,7 @@ python -m pip install -e transformers
 - `transformers/src/transformers/models/llama/modeling_llama.py`. -->
 
 ## Implementation
-After setup the environment, you can directly use our code base to imply <b>three LVLMs Decoding-based Hallucination Alleviation methods<\b>: Vision Contrastive Decoding ([VCD](https://arxiv.org/abs/2311.16922)), Instruction Contrastive Decoding ([ICD](https://arxiv.org/abs/2403.18715)), [OPERA](https://arxiv.org/abs/2311.17911), and our SID:
+After setup the environment, you can directly use our code base to imply <b>three LVLMs Decoding-based Hallucination Alleviation methods</b>: Vision Contrastive Decoding ([VCD](https://arxiv.org/abs/2311.16922)), Instruction Contrastive Decoding ([ICD](https://arxiv.org/abs/2403.18715)), [OPERA](https://arxiv.org/abs/2311.17911), and our SID:
 
 
 ```
@@ -51,7 +51,7 @@ The CHAIR metric utilizes the same configuration.
 
 ## Evaluation
 
-We provide extensive evaluation metrics including <b>GPT-4V<\b> `eval_utils/gpt4v_eval.py` , <b>GPT4<\b> `shr_eval.py`, <b>POPE<\b> `pope_eval.py`, <b>CHAIR<\b> `eval_utils/chair_eval.py`
+We provide extensive evaluation metrics including <b>GPT-4V</b> `eval_utils/gpt4v_eval.py` , <b>GPT4</b> `shr_eval.py`, <b>POPE</b> `pope_eval.py`, <b>CHAIR</b> `eval_utils/chair_eval.py`
 
 The following evaluation requires for MSCOCO 2014 / AOKVQA / GPA / Visual Genome dataset. Please download [here](https://cocodataset.org/#home) `dataset/download_cqa.py`,  `dataset/download_ha_dpo.py`,  `dataset/download_visual_genome_v1.2.py` and extract it in the data path.
 
