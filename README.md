@@ -1,18 +1,5 @@
 # Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models
 
-<!-- This repository provides the official PyTorch implementation of the following paper: 
-> [**OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation**](https://arxiv.org/pdf/2311.17911.pdf) <br>
-> [Qidong Huang](https://shikiw.github.io/)<sup>1,2</sup>, 
-> [Xiaoyi Dong](https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en)<sup>2</sup>, 
-> [Pan Zhang](https://panzhang0212.github.io/)<sup>2</sup>,
-> [Bin Wang](https://wangbindl.github.io/) <sup>2</sup>,
-> [Conghui He](https://conghui.github.io/) <sup>2</sup>, 
-> [Jiaqi Wang](https://myownskyw7.github.io/)<sup>2</sup>,
-> [Dahua Lin](http://dahua.site/)<sup>2</sup>, 
-> [Weiming Zhang](http://staff.ustc.edu.cn/~zhangwm/index.html)<sup>1</sup>, 
-> [Nenghai Yu](https://scholar.google.com/citations?user=7620QAMAAAAJ&hl=en)<sup>1</sup> <br>
-> <sup>1</sup>University of Science and Technology of China, <sup>2</sup>Shanghai AI Laboratory <br> -->
-
 
 ## Overview
 
@@ -36,7 +23,7 @@ python -m pip install -e transformers
 - `transformers/src/transformers/models/llama/modeling_llama.py`. -->
 
 ## Implementation
-After setup the environment, you can directly use these code base to imply Vision Contrastive Decoding ([VCD](https://arxiv.org/abs/2311.16922)), Instruction Contrastive Decoding ([ICD](https://arxiv.org/abs/2403.18715)), [OPERA](https://arxiv.org/abs/2311.17911), and our SID:
+After setup the environment, you can directly use our code base to imply <br>three LVLMs Decoding-based Hallucination Alleviation methods<\br>: Vision Contrastive Decoding ([VCD](https://arxiv.org/abs/2311.16922)), Instruction Contrastive Decoding ([ICD](https://arxiv.org/abs/2403.18715)), [OPERA](https://arxiv.org/abs/2311.17911), and our SID:
 
 
 ```
