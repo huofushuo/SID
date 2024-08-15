@@ -137,7 +137,7 @@ def sample(
         )
         # model_kwargs_cd = model_kwargs.copy()
 
-        if use_cd:
+        if use_cd: #for VCD and SID
             if self.model.config.fast_v_attention_rank != None:
                 self.model.config.use_fast_v = True
                 self.model.reset_fastv()
@@ -154,7 +154,7 @@ def sample(
             )
             next_token_logits_cd = outputs_cd.logits[:, -1, :]
 
-            # model_inputs_ad = self.prepare_inputs_for_generation_cd(input_ids, **model_kwargs_cd)
+            # model_inputs_ad = self.prepare_inputs_for_generation_cd(input_ids, **model_kwargs_cd) # vision add (enhancement) experiments
             # outputs_ad = self(
             #     **model_inputs_ad,
             #     return_dict=True,
@@ -174,11 +174,11 @@ def sample(
             # cutoff = 0.9 * next_token_logits.max(dim=-1, keepdim=True).values
 
             # version 2 set cutoff for Adaptive Plausibility Constraints
-            cutoff1 = torch.log(torch.tensor(0.4))
+            cutoff1 = torch.log(torch.tensor(cd_beta))
             cutoff = cutoff1 + next_token_logits.max(dim=-1, keepdim=True).values
             
-            # diffs = (1+cd_alpha)*next_token_logits - cd_alpha*next_token_logits_cd
-            diffs = 2 * next_token_logits - 1 * next_token_logits_cd
+            diffs = (1+cd_alpha)*next_token_logits - cd_alpha*next_token_logits_cd
+            # diffs = 2 * next_token_logits - 1 * next_token_logits_cd
             # diffs = next_token_logits_cd
 
             cd_logits = diffs.masked_fill(next_token_logits < cutoff, -float("inf"))
@@ -219,11 +219,11 @@ def sample(
             # cutoff = 0.9 * next_token_logits.max(dim=-1, keepdim=True).values
 
             # version 2 set cutoff for Adaptive Plausibility Constraints
-            cutoff1 = torch.log(torch.tensor(0.4))
+            cutoff1 = torch.log(torch.tensor(cd_beta))
             cutoff = cutoff1 + next_token_logits.max(dim=-1, keepdim=True).values
             
-            # diffs = (1+cd_alpha)*next_token_logits - cd_alpha*next_token_logits_cd
-            diffs = 2 * next_token_logits - 1 * next_token_logits_cd
+            diffs = (1+cd_alpha)*next_token_logits - cd_alpha*next_token_logits_cd
+            # diffs = 2 * next_token_logits - 1 * next_token_logits_cd
             # diffs = next_token_logits_cd
 
             cd_logits = diffs.masked_fill(next_token_logits < cutoff, -float("inf"))
