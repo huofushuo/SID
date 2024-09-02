@@ -100,7 +100,7 @@ parser.add_argument('--fast-v-sys-length', default=None, type=int, help='the len
 parser.add_argument('--fast-v-image-token-length', default=None, type=int, help='the length of image token')
 # opera-beamsearch
 parser.add_argument("--test-sample", type=int, default=500)
-parser.add_argument("--beam", type=int, default=5)
+parser.add_argument("--beam", type=int, default=1)
 parser.add_argument("--sample", type=bool, default=False)
 parser.add_argument("--scale-factor", type=float, default=50)
 parser.add_argument("--threshold", type=int, default=15)
