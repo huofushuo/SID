@@ -2,10 +2,7 @@ model:
   arch: blip2_vicuna_instruct
   model_type: vicuna7b
   max_txt_len: 128
-  # end_sym: "###"
-  # low_resource: True
-  # prompt_template: '###Human: {} ###Assistant: '
-  # ckpt: '/mnt/petrelfs/share_data/huangqidong/lvlm/minigpt4/prerained_minigpt4_7b.pth'
+
 
 
 datasets:
