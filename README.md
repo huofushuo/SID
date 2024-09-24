@@ -5,7 +5,7 @@
 
 <p align="center">
     <img src="imgs/SID.png" width="100%"></a> <br>
-    Diagram of Self-Introspective Decoding.
+    <b>Diagram of Self-Introspective Decoding.</b>
 </p>
 
 
