@@ -84,7 +84,7 @@ Besides, it needs you to prepare the following checkpoints of 7B base models:
 
 
 ## Acknowledgement
-This repo is based on the LVLMs codebase of [OPERA](https://github.com/shikiw/OPERA), [VCD](https://github.com/DAMO-NLP-SG/VCD), and [HA-DPO](https://opendatalab.github.io/HA-DPO/) . Thanks for their excellent works!
+Some codes are based on the LVLMs codebase of [OPERA](https://github.com/shikiw/OPERA), [VCD](https://github.com/DAMO-NLP-SG/VCD), and [HA-DPO](https://opendatalab.github.io/HA-DPO/) . Thanks for their excellent works!
 
 <!-- ## Citation
 If you find this work useful for your research, please cite [our paper](https://arxiv.org/pdf/2311.17911.pdf):
