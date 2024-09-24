@@ -3,7 +3,7 @@
 
 ## Overview
 
-[imgs/SID.png](https://github.com/huofushuo/SID/blob/main/imgs/SID.png)
+
 <p align="center">
     <img src="https://github.com/huofushuo/SID/blob/main/imgs/SID.png" width="100%"></a> <br>
     <b>Diagram of Self-Introspective Decoding.</b>
