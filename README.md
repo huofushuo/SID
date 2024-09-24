@@ -4,7 +4,7 @@
 ## Overview
 
 <p align="center">
-    <img src="https://github.com/huofushuo/SID/blob/main/imgs/SID.png" width="100%"></a> <br>
+    <img src="https://github.com/huofushuo/SID/blob/main/imgs/SID.png" width="80%"></a> <br>
     <b>Diagram of Self-Introspective Decoding.</b>
 </p>
 
