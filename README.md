@@ -1,5 +1,5 @@
-# Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models (https://arxiv.org/abs/2408.02032)
-
+# Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models
+[[Paper](https://arxiv.org/abs/2408.02032)]
 
 ## Overview
 
