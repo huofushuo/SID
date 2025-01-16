@@ -210,7 +210,7 @@ for img_id in range(len(img_files)):
 
     qu = "Please describe this image in detail."
     template = INSTRUCTION_TEMPLATE[args.model]
-    qu = template.replace("<question>", qu)
+    qu = [template.replace("<question>", qu)]
 
     if args.use_icd:
         text_cd = 'You are a confused image caption model.'
